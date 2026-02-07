@@ -14,6 +14,7 @@ export interface Vendor {
 // Example data structure is in docs/DATABASE_SCHEMA.md
 
 export async function getVendors(): Promise<Vendor[]> {
-  const vendors = await kv.get<Vendor[]>('vendors');
-  return vendors || [];
+  // const vendors = await kv.get<Vendor[]>('vendors');
+  // return vendors || [];
+  return [];
 }
