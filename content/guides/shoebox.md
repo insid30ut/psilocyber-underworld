@@ -1,7 +1,7 @@
 ---
-title: Shoebox Tek: Spawning & Fruiting
-description: How to start a shoebox tek mushroom grow! This is an easy start to mushroom growing!
-heroImage: /shoebox.jpg
+title: Shoebox Tek
+description: 'How to start a shoebox tek mushroom grow! This is an easy start to mushroom growing!'
+heroImage: /uploads/shoebox.jpg
 ---
 
 **Context:** The 6-quart shoebox is the standard for decentralized fruiting. It isolates contamination risks, requires zero modifications (no drilled holes or micropore tape), and dials in surface conditions naturally through the imperfect seal of the stock lid.
@@ -27,11 +27,15 @@ heroImage: /shoebox.jpg
 
 Shoeboxes self-regulate. The minimal air gaps in the stock lid provide just enough passive Fresh Air Exchange (FAE) for the mycelium to thrive without drying out the substrate.
 
+---
+
 | Growth Phase | Duration | Temperature | Lighting | Lid Status |
 | --- | --- | --- | --- | --- |
 | **Colonization** | 10–14 Days | 72°F - 75°F | Ambient / None | Latched tight. Do not open. |
 | **Pinning** | 5–10 Days | 68°F - 72°F | 12/12 Cycle (6500k) | Unlatched / Floating. |
 | **Fruiting** | 3–7 Days | 68°F - 72°F | 12/12 Cycle (6500k) | Dub-tub (if canopy breaches lid). |
+
+---
 
 1. **Colonization (The Wait):** Place the sealed shoebox in a dark, temperature-stable environment. Do not open the lid. Opening the lid drops humidity and introduces contamination risks before the mycelium has secured the substrate.
 2. **Inducing Fruiting Conditions:** Once the surface is 90-100% colonized (bright white mycelial growth), unlatch the lid and let it rest loosely on top of the tub. This slight gap introduces the necessary oxygen trigger for pinhead formation.
