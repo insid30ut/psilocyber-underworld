@@ -4,8 +4,10 @@ description: 'How to start a shoebox tek mushroom grow! This is an easy start to
 heroImage: /uploads/shoebox.jpg
 ---
 
-**Context:** The 6-quart shoebox is the standard for decentralized fruiting. It isolates contamination risks, requires zero modifications (no drilled holes or micropore tape), and dials in surface conditions naturally through the imperfect seal of the stock lid.
-**Objective:** Spawn fully colonized grain into prepared CVG (Coco Coir, Vermiculite, Gypsum) substrate and initiate fruiting.
+
+<Callout type="info" text="The 6-quart shoebox is the standard for decentralized fruiting. It isolates contamination risks, requires zero modifications (no drilled holes or micropore tape), and dials in surface conditions naturally through the imperfect seal of the stock lid." />
+
+**Objective:** **Spawn** fully colonized grain into prepared **CVG** (Coco Coir, Vermiculite, Gypsum) substrate and initiate fruiting.
 
 ---
 
