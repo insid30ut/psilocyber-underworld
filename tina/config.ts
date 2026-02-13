@@ -58,6 +58,30 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
+            templates: [
+              {
+                name: "Callout",
+                label: "Callout",
+                fields: [
+                  {
+                    name: "type",
+                    label: "Type",
+                    type: "string",
+                    options: ["info", "warning", "danger", "success"],
+                    required: true,
+                  },
+                  {
+                    name: "text",
+                    label: "Text",
+                    type: "string",
+                    required: true,
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                ],
+              },
+            ],
           },
         ],
       },

@@ -31,6 +31,60 @@ export async function generateMetadata({
 	};
 }
 
+
+const components = {
+	Callout: (props: { type: string; text: string }) => {
+		const colors = {
+			info: "bg-blue-100 text-blue-800 border-blue-500",
+			warning: "bg-yellow-100 text-yellow-800 border-yellow-500",
+			danger: "bg-red-100 text-red-800 border-red-500",
+			success: "bg-green-100 text-green-800 border-green-500",
+		};
+		// Default to info if type is invalid/missing
+		const colorClass = colors[props.type as keyof typeof colors] || colors.info;
+
+		return (
+			<div className={`p-4 border-l-4 rounded my-6 ${colorClass}`}>
+				<p className="font-bold mb-1 uppercase text-xs tracking-wider opacity-80">
+					{props.type}
+				</p>
+				<p>{props.text}</p>
+			</div>
+		);
+	},
+	// bold: (props: any) => <strong className="font-extrabold text-primary" {...props} />,
+	h1: (props: any) => (
+		<h1 className="text-5xl font-bold text-center mt-12 mb-6 text-primary drop-shadow-sm" {...props} />
+	),
+	h2: (props: any) => (
+		<h2 className="text-4xl font-semibold text-center mt-10 mb-5 text-foreground border-b border-border/50 pb-2" {...props} />
+	),
+	h3: (props: any) => (
+		<h3 className="text-3xl font-semibold mt-8 mb-4 text-foreground/90" {...props} />
+	),
+	h4: (props: any) => (
+		<h4 className="text-2xl font-semibold mt-6 mb-3 text-foreground/80" {...props} />
+	),
+	h5: (props: any) => (
+		<h5 className="text-xl font-semibold mt-4 mb-2 text-foreground/80" {...props} />
+	),
+	h6: (props: any) => (
+		<h6 className="text-lg font-semibold mt-4 mb-2 text-foreground/80" {...props} />
+	),
+	p: (props: any) => (
+		<p className="text-lg leading-relaxed mb-6 text-muted-foreground/90" {...props} />
+	),
+	ul: (props: any) => (
+		<ul className="list-disc pl-6 mb-6 space-y-2" {...props} />
+	),
+	ol: (props: any) => (
+		<ol className="list-decimal pl-6 mb-6 space-y-4" {...props} />
+	),
+	li: (props: any) => (
+		<li className="text-xl pl-2 marker:text-primary marker:font-bold" {...props} />
+	),
+};
+
 export default async function GuidePage({
 	params,
 }: {
@@ -80,7 +134,7 @@ export default async function GuidePage({
 						{data.guide.description}
 					</p>
 				)}
-				<TinaMarkdown content={data.guide.body} />
+				<TinaMarkdown content={data.guide.body} components={components} />
 			</div>
 		</div>
 	);
