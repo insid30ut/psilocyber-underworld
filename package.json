@@ -9,12 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@tinacms/cli": "^2.1.5",
+    "@tinacms/cli": "^0.60.5",
     "@vercel/kv": "^3.0.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "tinacms": "^3.4.1"
+    "tinacms": "^2.2.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
