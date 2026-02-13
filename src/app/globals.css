@@ -2,12 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: white;
-  color: black;
+@layer base {
+  :root {
+    /* Default to dark theme values since that's our primary look */
+    --background: 260 50% 10%; /* Deep Void Purple */
+    --foreground: 210 40% 98%; /* Starlight White */
+
+    --card: 260 50% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 260 50% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 280 80% 60%; /* Neon Psilo Purple */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 180 80% 50%; /* Cyan Mycelium */
+    --secondary-foreground: 260 50% 10%;
+
+    --muted: 260 30% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 120 100% 50%; /* Toxic Green */
+    --accent-foreground: 260 50% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 30% 20%;
+    --input: 260 30% 20%;
+    --ring: 280 80% 60%;
+
+    --radius: 0.5rem;
+  }
 }
 
-.dark body {
-    background-color: black;
-    color: white;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Custom scrollbar for webkit */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
 }

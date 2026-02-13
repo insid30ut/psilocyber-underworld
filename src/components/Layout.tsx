@@ -6,17 +6,19 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
-		<div className="min-h-screen flex flex-col">
-			<header className="bg-gray-800 text-white p-4">
-				<nav className="container mx-auto flex justify-between items-center">
-					<h1 className="text-2xl font-bold">
-						<a href="/">Psilocyber Underworld</a>
-					</h1>
-					<ul className="flex space-x-4">
+		<div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground">
+			<header className="fixed top-0 w-full z-50 border-b border-white/10 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+				<nav className="container mx-auto flex h-16 items-center justify-between px-4">
+					<div className="flex items-center gap-2">
+						<a href="/" className="text-2xl font-bold tracking-tighter bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+							Psilocyber Underworld
+						</a>
+					</div>
+					<ul className="flex items-center gap-6">
 						<li>
 							<a
 								href="/"
-								className="hover:underline"
+								className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
 							>
 								Guides
 							</a>
@@ -24,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 						<li>
 							<a
 								href="/vendors"
-								className="hover:underline"
+								className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
 							>
 								Vendors
 							</a>
@@ -32,9 +34,24 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 					</ul>
 				</nav>
 			</header>
-			<main className="flex-grow container mx-auto p-4">{children}</main>
-			<footer className="bg-gray-800 text-white p-4 text-center">
-				<p>&copy; 2026 Psilocyber Underworld. All rights reserved.</p>
+			<main className="flex-grow container mx-auto px-4 pt-24 pb-12">
+				{children}
+			</main>
+			<footer className="border-t border-white/10 bg-black/40 py-8">
+				<div className="container mx-auto px-4">
+					<div className="flex flex-col md:flex-row justify-between items-center gap-4">
+						<div className="text-center md:text-left">
+							<h3 className="text-lg font-semibold text-foreground">Psilocyber Underworld</h3>
+							<p className="text-sm text-muted-foreground">Mycelial Knowledge Hub</p>
+						</div>
+						<div className="flex gap-4 text-sm text-muted-foreground">
+							<a href="#" className="hover:text-primary transition-colors">Privacy</a>
+							<a href="#" className="hover:text-primary transition-colors">Terms</a>
+							<a href="#" className="hover:text-primary transition-colors">Contact</a>
+						</div>
+						<p className="text-sm text-muted-foreground">&copy; 2026 Psilocyber Underworld.</p>
+					</div>
+				</div>
 			</footer>
 		</div>
 	);

@@ -49,22 +49,40 @@ export default async function GuidePage({
 	}
 
 	return (
-		<article className="prose lg:prose-xl mx-auto py-8">
+		<div className="container mx-auto py-12 max-w-4xl">
 			{data.guide.heroImage && (
-				<Image
-					src={data.guide.heroImage}
-					alt={data.guide.title}
-					width={1200}
-					height={630}
-					className="w-full h-auto rounded-lg mb-8"
-				/>
+				<div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-8 shadow-2xl border border-white/10">
+					<Image
+						src={data.guide.heroImage}
+						alt={data.guide.title}
+						fill
+						className="object-cover"
+						priority
+					/>
+					<div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
+					<div className="absolute bottom-0 left-0 p-8">
+						<h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-md">
+							{data.guide.title}
+						</h1>
+					</div>
+				</div>
 			)}
-			<h1>{data.guide.title}</h1>
-			<p className="lead">{data.guide.description}</p>
-			<div>
+
+			{!data.guide.heroImage && (
+				<h1 className="text-4xl md:text-5xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+					{data.guide.title}
+				</h1>
+			)}
+
+			<div className="prose prose-invert prose-lg max-w-none pt-2">
+				{data.guide.description && (
+					<p className="text-xl text-muted-foreground leading-relaxed mb-8 border-l-4 border-primary pl-4 italic">
+						{data.guide.description}
+					</p>
+				)}
 				<TinaMarkdown content={data.guide.body} />
 			</div>
-		</article>
+		</div>
 	);
 }
 
