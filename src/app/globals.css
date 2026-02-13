@@ -5,8 +5,10 @@
 @layer base {
   :root {
     /* Default to dark theme values since that's our primary look */
-    --background: 260 50% 10%; /* Deep Void Purple */
-    --foreground: 210 40% 98%; /* Starlight White */
+    --background: 260 50% 10%;
+    /* Deep Void Purple */
+    --foreground: 210 40% 98%;
+    /* Starlight White */
 
     --card: 260 50% 13%;
     --card-foreground: 210 40% 98%;
@@ -14,16 +16,19 @@
     --popover: 260 50% 10%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 280 80% 60%; /* Neon Psilo Purple */
+    --primary: 280 80% 60%;
+    /* Neon Psilo Purple */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 180 80% 50%; /* Cyan Mycelium */
+    --secondary: 180 80% 50%;
+    /* Cyan Mycelium */
     --secondary-foreground: 260 50% 10%;
 
     --muted: 260 30% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 120 100% 50%; /* Toxic Green */
+    --accent: 120 100% 50%;
+    /* Toxic Green */
     --accent-foreground: 260 50% 10%;
 
     --destructive: 0 84% 60%;
@@ -39,26 +44,29 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
-  
+
   /* Custom scrollbar for webkit */
   ::-webkit-scrollbar {
     width: 10px;
   }
-  
+
   ::-webkit-scrollbar-track {
-    @apply bg-background;
+    background-color: hsl(var(--background));
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    @apply bg-muted rounded-full;
+    background-color: hsl(var(--muted));
+    border-radius: 9999px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-primary/50;
+    background-color: hsl(var(--primary) / 0.5);
   }
 }
