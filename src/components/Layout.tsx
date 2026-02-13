@@ -1,5 +1,5 @@
 import React from "react";
-import { buttonVariants } from "@/components/Button";
+import { buttonVariants, cn } from "@/components/Button";
 
 interface LayoutProps {
 	children: React.ReactNode;
@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
 		<div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground">
-			<header className="fixed top-0 w-full z-50 border-b border-white/10 bg-background">
+			<header className="fixed top-0 w-full z-50 border-b border-white/10 bg-black">
 				<nav className="container mx-auto flex h-16 items-center justify-between px-4">
 					<div className="flex items-center gap-2">
 						<a href="/" className="hover:opacity-80 transition-opacity">
@@ -19,7 +19,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 						<li>
 							<a
 								href="/guides"
-								className={buttonVariants({ variant: "secondary" })}
+								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full")}
 							>
 								Guides
 							</a>
@@ -27,7 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 						<li>
 							<a
 								href="/vendors"
-								className={buttonVariants({ variant: "secondary" })}
+								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full")}
 							>
 								Vendors
 							</a>
