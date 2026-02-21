@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
 			},
 		];
 	},
+	images: {
+		remotePatterns: [
+			{
+				hostname: "www.bloomsocial.media",
+			},
+		],
+	},
 };
 
 export default nextConfig;
