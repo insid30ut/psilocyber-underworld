@@ -22,6 +22,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 					<ul className="flex items-center gap-6">
 						<li>
 							<a
+								href="/about"
+								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full font-semibold px-6 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] transition-all duration-300")}
+							>
+								About
+							</a>
+						</li>
+						<li>
+							<a
 								href="/guides"
 								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full font-semibold px-6 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] transition-all duration-300")}
 							>
@@ -52,7 +60,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 						<div className="flex gap-6 text-sm font-medium text-muted-foreground">
 							<a href="#" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Privacy</a>
 							<a href="#" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Terms</a>
-							<a href="#" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Contact</a>
+							<a href="/about" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Contact</a>
 						</div>
 						<p className="text-sm text-muted-foreground/60">&copy; 2026 Psilocyber Underworld.</p>
 					</div>
