@@ -1,6 +1,6 @@
 # Project Status: Psilocyber Underworld Web App
 
-**Last Updated:** February 21, 2026
+**Last Updated:** February 22, 2026
 
 ## What We've Accomplished So Far
 
@@ -12,18 +12,26 @@
     - Updated `tina/config.ts` to support `categories` (tags) in the markdown frontmatter.
     - Added categories to all existing markdown guides (Grain Prep, Shoebox, Substrate CVG).
     - Extracted the guide rendering into a Client component (`GuideList.tsx`) featuring real-time, fuzzy-text searching and dynamic category filter pills. Tested and verified locally.
+6. **About & Contact Page (`/about`)**:
+    - Created a dedicated page highlighting the decentralized mycology mission statement.
+    - Used the same branding and backdrop banner as the homepage.
+    - Wired up interactive buttons for `mailto:mycelialfunguy@gmail.com` and your personal Instagram account.
+    - Linked the new page into the main navigation Header and Footer.
+7. **Site-Wide SEO & Metadata**:
+    - Configured the main `layout.tsx` to include default titles, descriptions, and OpenGraph/Twitter Card images (`psilocyberunderworldbanner.png`) so your links look amazing when shared.
+    - Added custom static metadata to the Home, Vendors, and Archives pages.
+    - Implemented **Dynamic Metadata** for individual guides. Each guide automatically generates SEO tags based on its actual title, description, and hero header image!
+    - Generated a dynamic `sitemap.ts` and `robots.ts` to map all your URLs (including dynamically generated Tina CMS routes) for Google and other search crawlers.
 
 ## Up Next
 
-When you resume work on the project, here is the immediate roadmap of features we have ready to build:
+When you resume work on the project, the heavy lifting of the core features and design is completely finished! Here is what's left on the immediate roadmap:
 
-- [ ] **About / Contact Page**: Design and implement a new page detailing the mission of Psilocyber Underworld and providing an encrypted contact form or email link.
-- [ ] **Site-wide SEO & Metadata**: Implement robust metadata generation (title tags, descriptions, OpenGraph images) across all pages so the site shines on search engines and social media.
-- [ ] **Data Architecture / Database Hookup**: Currently using hard-coded lists (like Vendors). We can hook this up to the Vercel KV store (`@vercel/kv`) as hinted in `src/lib/vendors.ts`.
-- [ ] **Deployment Prep**: Prepare the project to be deployed live on Vercel, which will include shifting Tina CMS from "local" mode to production mode.
+- [ ] **Data Architecture / Database Hookup**: We're currently using a hard-coded list for your Vendors. We should hook this up to the Vercel KV store (`@vercel/kv`) as hinted in `src/lib/vendors.ts` so you can update vendors without redeploying code.
+- [ ] **Deployment Prep**: Prepare the project to be deployed live on Vercel, which will include shifting Tina CMS from "local-only" mode to production mode so it can save edits to your actual GitHub repository.
 
 ## How to Resume
 
 1. Drop the contents of this file back into my chat window, or just tell me to read `RESUME.md`.
 2. Run `npm run dev` to start the Next.js and Tina CMS servers.
-3. Let me know which of the "Up Next" items you want to tackle first!
+3. Let me know which of the two remaining "Up Next" items you want to tackle first!

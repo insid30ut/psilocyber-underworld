@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { client } from "../../../tina/__generated__/client";
+
+export const metadata: Metadata = {
+    title: "The Archives",
+    description: "Comprehensive protocols and data for advanced mycology. Master the art of cultivation with our verified guides.",
+};
 import GuideList from "./GuideList";
 
 export default async function GuidesPage() {

@@ -14,8 +14,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Psilocyber Underworld",
-	description: "A knowledge hub for mushroom cultivation guides.",
+	title: {
+		default: "Psilocyber Underworld",
+		template: "%s | Psilocyber Underworld",
+	},
+	description: "A decentralized, open-source archive dedicated to the preservation, exploration, and distribution of advanced mycological protocols.",
+	keywords: ["mycology", "mushroom cultivation", "spores", "teks", "mycelium", "protocols", "fungi"],
+	openGraph: {
+		title: "Psilocyber Underworld",
+		description: "A decentralized, open-source archive dedicated to the preservation, exploration, and distribution of advanced mycological protocols.",
+		url: "https://psilocyberunderworld.com",
+		siteName: "Psilocyber Underworld",
+		images: [
+			{
+				url: "/psilocyberunderworldbanner.png",
+				width: 1200,
+				height: 630,
+				alt: "Psilocyber Underworld Banner",
+			},
+		],
+		locale: "en_US",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Psilocyber Underworld",
+		description: "A decentralized, open-source archive dedicated to the preservation, exploration, and distribution of advanced mycological protocols.",
+		images: ["/psilocyberunderworldbanner.png"],
+	},
 };
 
 export default function RootLayout({

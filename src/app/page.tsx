@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+	title: "Decentralized Mycology",
+	description: "A central hub for the modern mycological community, offering verified vendors, cultivation guides, and shared mycelial knowledge.",
+};
 import { Button } from "@/components/Button";
 
 export default function Home() {

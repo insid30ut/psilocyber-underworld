@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { getVendors } from "@/lib/vendors";
+
+export const metadata: Metadata = {
+	title: "Verified Vendors",
+	description: "A curated network of trusted genetic suppliers, equipment fabricators, and cultivation resources.",
+};
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/Card";
 
