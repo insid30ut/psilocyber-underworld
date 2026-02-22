@@ -2,6 +2,10 @@
 title: Shoebox Tek
 description: 'How to start a shoebox tek mushroom grow! This is an easy start to mushroom growing!'
 heroImage: /uploads/shoebox.jpg
+categories:
+  - Technique
+  - Fruiting
+  - Beginner
 ---
 
 The 6-quart shoebox is the standard for decentralized fruiting. It isolates contamination risks, requires zero modifications (no drilled holes or micropore tape), and dials in surface conditions naturally through the imperfect seal of the stock lid.

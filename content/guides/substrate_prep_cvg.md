@@ -2,6 +2,9 @@
 title: 'Substrate Preparation Protocol'
 description: 'Standard Operating Procedure for bulk substrate pasteurization.'
 heroImage: /uploads/subprep.png
+categories:
+  - Substrate
+  - Beginner
 ---
 
 ## CVG Substrate Preparation

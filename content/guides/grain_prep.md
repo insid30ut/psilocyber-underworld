@@ -2,6 +2,10 @@
 title: Grain Prep
 description: 'Whole Oats or Millet. Objective: Achieve 50-55% moisture content (MC) with zero surface moisture to prevent bacterial vectoring during colonization.'
 heroImage: /uploads/millet.jpg
+categories:
+  - Substrate
+  - Technique
+  - Beginner
 ---
 
 # Grain Preparation Protocol: Commercial Scalability

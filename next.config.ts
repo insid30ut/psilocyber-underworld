@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
 			{
 				hostname: "www.bloomsocial.media",
 			},
+			{
+				hostname: "inoculatetheworld.com",
+			},
+			{
+				hostname: "microppose.com",
+			},
 		],
 	},
 };
