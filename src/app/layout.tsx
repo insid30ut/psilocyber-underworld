@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://mycelialfunguy.com"),
 	title: {
 		default: "Psilocyber Underworld",
 		template: "%s | Psilocyber Underworld",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Psilocyber Underworld",
 		description: "A decentralized, open-source archive dedicated to the preservation, exploration, and distribution of advanced mycological protocols.",
-		url: "https://psilocyberunderworld.com",
+		url: "https://mycelialfunguy.com",
 		siteName: "Psilocyber Underworld",
 		images: [
 			{

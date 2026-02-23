@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { client } from "../../tina/__generated__/client";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://psilocyberunderworld.com';
+    const baseUrl = 'https://mycelialfunguy.com';
 
     // Fetch all guides to build dynamic URLs
     const { data } = await client.queries.guideConnection();

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/admin/'],
         },
-        sitemap: 'https://psilocyberunderworld.com/sitemap.xml',
+        sitemap: 'https://mycelialfunguy.com/sitemap.xml',
     }
 }
