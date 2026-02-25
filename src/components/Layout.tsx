@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { buttonVariants, cn } from "@/components/Button";
 
 interface LayoutProps {
@@ -15,34 +16,34 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 			<header className="fixed top-0 w-full z-50 border-b border-white/5 bg-black shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
 				<nav className="container mx-auto flex h-20 items-center justify-between px-6">
 					<div className="flex items-center gap-2">
-						<a href="/" className="hover:opacity-80 transition-opacity hover:scale-105 duration-300">
+						<Link href="/" className="hover:opacity-80 transition-opacity hover:scale-105 duration-300">
 							<img src="/297.png" alt="Psilocyber Underworld" className="h-12 w-12 rounded-full object-cover drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
-						</a>
+						</Link>
 					</div>
 					<ul className="flex items-center gap-6">
 						<li>
-							<a
+							<Link
 								href="/about"
 								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full font-semibold px-6 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] transition-all duration-300")}
 							>
 								About
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/guides"
 								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full font-semibold px-6 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] transition-all duration-300")}
 							>
 								Guides
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a
+							<Link
 								href="/partners"
 								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full font-semibold px-6 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] transition-all duration-300")}
 							>
 								Partners
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>
@@ -58,9 +59,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 							<p className="text-sm text-muted-foreground mt-1 tracking-wide">Mycelial Knowledge Hub</p>
 						</div>
 						<div className="flex gap-6 text-sm font-medium text-muted-foreground">
-							<a href="#" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Privacy</a>
-							<a href="#" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Terms</a>
-							<a href="/about" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Contact</a>
+							<Link href="/privacy" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Privacy</Link>
+							<Link href="/terms" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Terms</Link>
+							<Link href="/about" className="hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]">Contact</Link>
 						</div>
 						<p className="text-sm text-muted-foreground/60">&copy; 2026 Psilocyber Underworld.</p>
 					</div>
