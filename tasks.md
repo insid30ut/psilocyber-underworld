@@ -9,7 +9,8 @@
 - [x] Rename Vendors to Partners
 - [x] Migrate Partners to Tina CMS
 
-## Next Actions (Start Here Tomorrow)
-1. Commit the recent changes to GitHub (`git add . && git commit -m "feat: migrated Partners page to use TinaCMS and updated site-wide terminology" && git push`)
-2. Deploy the project to Vercel (pushing code to `master` will trigger this).
-3. Connect the live Vercel domain to TinaCloud so the `/admin` portal functions on the live site.
+## Next Actions
+- [x] Commit the recent changes to GitHub (`git add . && git commit -m "feat: migrated Partners page to use TinaCMS and updated site-wide terminology" && git push`)
+- [x] Deploy the project to Vercel (pushing code to `master` will trigger this).
+- [ ] Connect the live Vercel domain to TinaCloud so the `/admin` portal functions on the live site.
+- [x] Created 11 new Guide stubs (PF Tek, Monotub, etc) in `content/guides/`
