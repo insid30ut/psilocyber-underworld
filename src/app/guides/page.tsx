@@ -16,7 +16,7 @@ export default async function GuidesPage() {
         <div className="flex flex-col gap-8">
             <Hero
                 title="The Archives"
-                subtitle="Comprehensive protocols and data for advanced mycology. Master the art of cultivation with our verified guides."
+                subtitle="Guides to cultivation."
             />
 
             <GuideList guides={guides || []} />

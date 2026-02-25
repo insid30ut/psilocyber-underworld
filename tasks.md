@@ -14,3 +14,13 @@
 - [x] Deploy the project to Vercel (pushing code to `master` will trigger this).
 - [ ] Connect the live Vercel domain to TinaCloud so the `/admin` portal functions on the live site.
 - [x] Created 11 new Guide stubs (PF Tek, Monotub, etc) in `content/guides/`
+
+## Webapp Enhancements
+- [ ] Implement Interactive "Lab/Focus Mode" for Guides (High Contrast, Large Font)
+- [ ] Build Interactive Checklists via custom TinaCMS MDX component
+- [ ] Add Sticky Table of Contents to Guide reading view
+- [ ] Add "Related Protocols" suggestion engine at bottom of guides
+- [ ] Implement "Save/Bookmark" functionality with a "My Lab" dashboard
+- [ ] Create a neon primary Scroll Progress Bar for long protocols
+- [ ] Implement Image Lightbox for zooming in on Markdown inline images
+- [ ] Add Search and Filtering capabilities to the Partners page
