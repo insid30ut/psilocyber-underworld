@@ -1,41 +1,41 @@
 import type { Metadata } from "next";
-import { getVendors } from "@/lib/vendors";
+import { getPartners } from "@/lib/partners";
 
 export const metadata: Metadata = {
-	title: "Verified Vendors",
-	description: "A curated network of trusted genetic suppliers, equipment fabricators, and cultivation resources.",
+	title: "Network Partners",
+	description: "A curated network of trusted genetic suppliers, equipment fabricators, social platforms, and cultivation resources.",
 };
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/Card";
 
-export default async function VendorsPage() {
-	const vendors = await getVendors();
+export default async function PartnersPage() {
+	const partners = await getPartners();
 
 	return (
 		<div className="flex flex-col gap-8">
 			<div className="flex flex-col gap-4 border-b border-white/10 pb-8">
 				<h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent w-fit">
-					Trusted Vendors
+					Network Partners
 				</h1>
 				<p className="text-xl text-muted-foreground max-w-2xl">
-					Verified suppliers for spores, genetics, substrates, and mycology equipment.
+					Verified suppliers, platforms, and tools for the modern mycologist.
 				</p>
 			</div>
 			<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-				{vendors.map((vendor) => (
+				{partners.map((partner) => (
 					<a
-						key={vendor.id}
-						href={vendor.website}
+						key={partner.id}
+						href={partner.website}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="group"
 					>
 						<Card className="h-full bg-card/50 backdrop-blur-sm border-white/5 hover:border-primary/50 transition-all duration-300 group-hover:transform group-hover:-translate-y-1">
 							<CardHeader className="flex flex-row items-center gap-4">
-								{vendor.logoUrl ? (
+								{partner.logoUrl ? (
 									<Image
-										src={vendor.logoUrl}
-										alt={`${vendor.name} logo`}
+										src={partner.logoUrl}
+										alt={`${partner.name} logo`}
 										width={48}
 										height={48}
 										className="rounded-full bg-black border border-white/10"
@@ -47,16 +47,16 @@ export default async function VendorsPage() {
 								)}
 								<div>
 									<CardTitle className="text-xl group-hover:text-primary transition-colors">
-										{vendor.name}
+										{partner.name}
 									</CardTitle>
 									<p className="text-sm text-secondary tracking-wide uppercase mt-1">
-										{vendor.category}
+										{partner.category}
 									</p>
 								</div>
 							</CardHeader>
 							<CardContent>
 								<p className="text-muted-foreground text-sm leading-relaxed">
-									{vendor.description}
+									{partner.description}
 								</p>
 							</CardContent>
 							<CardFooter>

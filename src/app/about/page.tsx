@@ -64,7 +64,7 @@ export default function AboutPage() {
                 <div className="flex flex-col gap-4 max-w-2xl relative z-10">
                     <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Initiate Contact</h2>
                     <p className="text-muted-foreground text-lg">
-                        Have a verified protocol to submit, a trusted vendor to recommend, or a platform issue to report? Reach out through our secured channels.
+                        Have a verified protocol to submit, a trusted partner to recommend, or a platform issue to report? Reach out through our secured channels.
                     </p>
                 </div>
 

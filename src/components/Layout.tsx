@@ -38,10 +38,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 						</li>
 						<li>
 							<a
-								href="/vendors"
+								href="/partners"
 								className={cn(buttonVariants({ variant: "secondary" }), "rounded-full font-semibold px-6 hover:shadow-[0_0_15px_rgba(45,212,191,0.4)] transition-all duration-300")}
 							>
-								Vendors
+								Partners
 							</a>
 						</li>
 					</ul>

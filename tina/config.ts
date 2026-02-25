@@ -94,6 +94,45 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "partner",
+        label: "Partners",
+        path: "content/partners",
+        fields: [
+          {
+            type: "string",
+            name: "name",
+            label: "Partner Name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "website",
+            label: "Website URL",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Category",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "logoUrl",
+            label: "Logo Image",
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            ui: {
+              component: "textarea",
+            },
+          },
+        ],
+      },
     ],
   },
 });

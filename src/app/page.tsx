@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Decentralized Mycology",
-	description: "A central hub for the modern mycological community, offering verified vendors, cultivation guides, and shared mycelial knowledge.",
+	description: "A central hub for the modern mycological community, offering trusted partners, cultivation guides, and shared mycelial knowledge.",
 };
 import { Button } from "@/components/Button";
 
@@ -38,7 +38,7 @@ export default function Home() {
 					Welcome to the underground. A curated repository of advanced cultivation techniques, strain data, and resources for the modern mycologist.
 				</p>
 				<p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed max-w-3xl">
-					Psilocyber Underworld serves as a central hub for the modern mycological community. Our webapp is designed to securely connect cultivators with verified vendors, provide comprehensive, step-by-step cultivation guides, and foster a network of shared mycelial knowledge. Whether you are seeking high-quality spores, advanced substrate recipes, or simply a sanctuary for learning, you have found your digital underground.
+					Psilocyber Underworld serves as a central hub for the modern mycological community. Our webapp is designed to securely connect cultivators with trusted partners, provide comprehensive, step-by-step cultivation guides, and foster a network of shared mycelial knowledge. Whether you are seeking high-quality spores, advanced substrate recipes, or simply a sanctuary for learning, you have found your digital underground.
 				</p>
 				<div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 w-full sm:w-auto">
 					<Link href="/guides" className="w-full sm:w-auto">
@@ -46,9 +46,9 @@ export default function Home() {
 							Enter the Archives
 						</Button>
 					</Link>
-					<Link href="/vendors" className="w-full sm:w-auto">
+					<Link href="/partners" className="w-full sm:w-auto">
 						<Button variant="outline" size="lg" className="w-full font-bold text-lg px-10 py-7 h-auto rounded-full hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_rgba(45,212,191,0.3)] hover:border-secondary hover:text-secondary group">
-							Verified Vendors
+							Network Partners
 						</Button>
 					</Link>
 				</div>
