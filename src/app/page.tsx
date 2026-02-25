@@ -6,31 +6,15 @@ export const metadata: Metadata = {
 	description: "A central hub for the modern mycological community, offering trusted partners, cultivation guides, and shared mycelial knowledge.",
 };
 import { Button } from "@/components/Button";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
 	return (
 		<div className="flex flex-col gap-10 min-h-[80vh] justify-center items-center pb-8 pt-4">
-			{/* Hero Section */}
-			<section className="relative w-full mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_-12px_rgba(168,85,247,0.3)] group">
-				<div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-10" />
-				<div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:bg-primary/0 transition-colors duration-700" />
-				<img
-					src="/psilocyberunderworldbanner.png"
-					alt="Psilocyber Underworld Banner"
-					className="w-full h-[300px] md:h-[500px] xl:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
-				/>
-				<div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-6 text-center">
-					<h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-widest uppercase leading-tight drop-shadow-[0_5px_15px_rgba(0,0,0,1)]">
-						<span className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] mix-blend-plus-lighter">
-							Welcome to the
-						</span>
-						<br />
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white drop-shadow-[0_5px_15px_rgba(0,0,0,1)]">
-							Psilocyber Underworld
-						</span>
-					</h1>
-				</div>
-			</section>
+			<Hero
+				titleLine1="Welcome to the"
+				titleLine2="Psilocyber Underworld"
+			/>
 
 			{/* Content Section */}
 			<section className="flex flex-col items-center text-center gap-10 max-w-4xl mx-auto px-6">

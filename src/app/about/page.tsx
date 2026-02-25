@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/Card";
 import { Button } from "@/components/Button";
+import { Hero } from "@/components/Hero";
 
 export const metadata = {
     title: "About | Psilocyber Underworld",
@@ -9,27 +10,10 @@ export const metadata = {
 export default function AboutPage() {
     return (
         <div className="flex flex-col gap-16 pb-16 mt-8">
-            {/* Hero Section */}
-            <section className="relative w-full mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_-12px_rgba(168,85,247,0.3)] group">
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-10" />
-                <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:bg-primary/0 transition-colors duration-700" />
-                <img
-                    src="/psilocyberunderworldbanner.png"
-                    alt="Psilocyber Underworld Banner"
-                    className="w-full h-[300px] md:h-[500px] xl:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-6 text-center">
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-widest uppercase leading-tight drop-shadow-[0_5px_15px_rgba(0,0,0,1)]">
-                        <span className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] mix-blend-plus-lighter">
-                            Decentralized
-                        </span>
-                        <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white drop-shadow-[0_5px_15px_rgba(0,0,0,1)]">
-                            Mycology
-                        </span>
-                    </h1>
-                </div>
-            </section>
+            <Hero
+                titleLine1="Decentralized"
+                titleLine2="Mycology"
+            />
 
             {/* Content Section */}
             <section className="grid md:grid-cols-2 gap-8">

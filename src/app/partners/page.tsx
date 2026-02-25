@@ -7,20 +7,17 @@ export const metadata: Metadata = {
 };
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/Card";
+import { Hero } from "@/components/Hero";
 
 export default async function PartnersPage() {
 	const partners = await getPartners();
 
 	return (
 		<div className="flex flex-col gap-8">
-			<div className="flex flex-col gap-4 border-b border-white/10 pb-8">
-				<h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent w-fit">
-					Network Partners
-				</h1>
-				<p className="text-xl text-muted-foreground max-w-2xl">
-					Verified suppliers, platforms, and tools for the modern mycologist.
-				</p>
-			</div>
+			<Hero
+				title="Network Partners"
+				subtitle="Verified suppliers, platforms, and tools for the modern mycologist."
+			/>
 			<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{partners.map((partner) => (
 					<a
